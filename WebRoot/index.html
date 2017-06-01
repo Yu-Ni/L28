@@ -12,6 +12,19 @@
   </head>
   
   <body>
-    This is my HTML page. <br>
+  
+  	<button onclick="clickA()">播放/暂停</button>
+    <audio id="audio" src="./raw/1.mp3" >你的浏览器不支持</audio>
+    
+    	<script type="text/javascript">
+  		var audio = document.getElementById("audio");
+  		function clickA(){
+  			if(audio.paused){
+  				audio.play();
+  			}else{
+  				audio.pause();
+  			}
+  		}
+  	</script>
   </body>
 </html>
